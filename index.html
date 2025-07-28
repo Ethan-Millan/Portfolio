@@ -3,187 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio Profesional</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="profile-img">
-            <h1>María González</h1>
-            <p class="tagline">Diseñadora UX/UI & Desarrolladora Frontend</p>
-            <div class="social-links">
-                <a href="#"><i>LinkedIn</i></a>
-                <a href="#"><i>GitHub</i></a>
-                <a href="#"><i>Twitter</i></a>
-                <a href="#"><i>Behance</i></a>
-            </div>
-        </div>
-    </header>
-    
-    <nav>
-        <div class="nav-container">
-            <div class="logo">MG</div>
-            <div class="menu-toggle">☰</div>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mí</a></li>
+    <header class="navbar">
+        <nav>
+            <!-- Barra de navegación -->
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#education">Educación</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#contacts">Contacto</a></li>
             </ul>
-        </div>
-    </nav>
-    
-    <section id="about">
-        <h2 class="section-title">Sobre Mí</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>¡Hola! Soy María, una diseñadora y desarrolladora apasionada por crear experiencias digitales hermosas y funcionales. Con más de 5 años de experiencia en el campo, he trabajado con diversas empresas y startups ayudándolas a materializar sus visiones en productos digitales impactantes.</p>
-                <p>Mi enfoque combina habilidades técnicas sólidas con un ojo atento al diseño y la experiencia del usuario. Creo que la mejor tecnología es aquella que resuelve problemas reales de manera intuitiva y accesible.</p>
-                <div class="skills">
-                    <span class="skill">UI/UX Design</span>
-                    <span class="skill">HTML/CSS</span>
-                    <span class="skill">JavaScript</span>
-                    <span class="skill">React</span>
-                    <span class="skill">Figma</span>
-                    <span class="skill">Adobe Creative Suite</span>
-                    <span class="skill">Responsive Design</span>
-                    <span class="skill">User Research</span>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects" class="projects">
+            <!-- Proyectos realizados -->
+            <div class="project">
+                <h2>Sanción Digital</h2>
+                <img src="./img/project1.png" alt="Captura del sistema Sanción Digital">
+                <p>Sistema web para la gestión de sanciones estudiantiles desarrollado con PHP y MySQL.</p>
+            </div>
+
+            <div class="project">
+                <h2>Proyecto 2</h2>
+                <img src="./img/project2.png" alt="Captura del Proyecto 2">
+                <div class="links">
+                    <a href="#"><img src="./img/github.png" alt="Repositorio en GitHub"></a>
+                    <a href="#"><img src="./img/enlace.png" alt="Ver página web"></a>
+                </div>
+                <p>Aplicación enfocada en automatización de procesos académicos usando Laravel.</p>
+            </div>
+
+            <div class="project">
+                <h2>Proyecto 3</h2>
+                <img src="./img/project3.png" alt="Captura del Proyecto 3">
+                <div class="links">
+                    <a href="#"><img src="./img/github.png" alt="Repositorio en GitHub"></a>
+                    <a href="#"><img src="./img/enlace.png" alt="Ver página web"></a>
+                </div>
+                <p>Plataforma para monitoreo de actividades escolares en tiempo real.</p>
+            </div>
+
+            <div class="project">
+                <h2>Proyecto 4</h2>
+                <img src="./img/project4.png" alt="Captura del Proyecto 4">
+                <div class="links">
+                    <a href="#"><img src="./img/github.png" alt="Repositorio en GitHub"></a>
+                    <a href="#"><img src="./img/enlace.png" alt="Ver página web"></a>
+                </div>
+                <p>Sistema de control de acceso con interfaz intuitiva y gestión de usuarios.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <!-- Información personal -->
+            <div class="aboutme">
+                <h2>¡Hola!</h2>
+                <p>Mi nombre es Ethan y soy un desarrollador backend. Me especializo en crear sistemas funcionales y eficientes con tecnologías como PHP, MySQL y Laravel.</p>
+            </div>
+
+            <div class="technologies">
+                <h2>Tecnologías</h2>
+                <div class="tech-grid">
+                    <div><img src="./img/codigo-php.png" alt="PHP"><p>PHP - Básico</p></div>
+                    <div><img src="./img/laravel.png" alt="Laravel"><p>Laravel - Básico</p></div>
+                    <div><img src="./img/mysql.png" alt="MySQL"><p>MySQL - Básico</p></div>
+                    <div><img src="./img/linux.png" alt="Linux"><p>Linux - Básico</p></div>
+                    <div><img src="./img/html-5.png" alt="HTML"><p>HTML - Básico</p></div>
+                    <div><img src="./img/css.png" alt="CSS"><p>CSS - Básico</p></div>
+                    <div><img src="./img/js.png" alt="JavaScript"><p>JS - Básico</p></div>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <footer id="contacts" class="piepag">
+        <!-- Redes sociales -->
+        <div class="redes">
+            <a href="#"><img src="./img/github.png" alt="Perfil de GitHub"></a>
         </div>
-    </section>
-    
-    <section id="projects">
-        <h2 class="section-title">Proyectos Destacados</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="https://via.placeholder.com/600x400" alt="Proyecto 1" class="project-img">
-                <div class="project-info">
-                    <h3 class="project-title">Plataforma de E-learning</h3>
-                    <p>Diseño y desarrollo frontend de una plataforma de cursos online con funcionalidades interactivas.</p>
-                    <div class="project-links">
-                        <a href="#">Ver demo →</a>
-                        <a href="#">Código</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <img src="https://via.placeholder.com/600x400" alt="Proyecto 2" class="project-img">
-                <div class="project-info">
-                    <h3 class="project-title">App de Gestión de Tareas</h3>
-                    <p>Aplicación móvil para gestión de proyectos con integración de calendario y colaboración en equipo.</p>
-                    <div class="project-links">
-                        <a href="#">Ver demo →</a>
-                        <a href="#">Código</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <img src="https://via.placeholder.com/600x400" alt="Proyecto 3" class="project-img">
-                <div class="project-info">
-                    <h3 class="project-title">Rediseño de Sitio Web Corporativo</h3>
-                    <p>Rediseño completo de la identidad digital de una empresa de tecnología, mejorando la usabilidad y conversiones.</p>
-                    <div class="project-links">
-                        <a href="#">Ver caso de estudio →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="experience">
-        <h2 class="section-title">Experiencia Profesional</h2>
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <h3 class="job-title">Diseñadora UX/UI Senior</h3>
-                    <p class="company">TechSolutions Inc.</p>
-                </div>
-                <span class="date">2020 - Presente</span>
-            </div>
-            <ul>
-                <li>Lideré el rediseño de la plataforma principal, mejorando la retención de usuarios en un 35%.</li>
-                <li>Colaboré con equipos de desarrollo para implementar sistemas de diseño consistentes.</li>
-                <li>Realicé investigación de usuarios y pruebas de usabilidad para iterar sobre los flujos principales.</li>
-            </ul>
-        </div>
-        
-        <div class="experience-item">
-            <div class="experience-header">
-                <div>
-                    <h3 class="job-title">Diseñadora de Producto</h3>
-                    <p class="company">StartUp Innovadora</p>
-                </div>
-                <span class="date">2018 - 2020</span>
-            </div>
-            <ul>
-                <li>Diseñé desde cero la experiencia de usuario para la aplicación móvil de la startup.</li>
-                <li>Creé prototipos interactivos para pruebas con usuarios potenciales.</li>
-                <li>Trabajé estrechamente con el equipo de desarrollo en la implementación.</li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="education">
-        <h2 class="section-title">Educación</h2>
-        <div class="education-item">
-            <div class="education-header">
-                <div>
-                    <h3 class="degree">Maestría en Diseño de Interacción</h3>
-                    <p class="institution">Universidad de Buenos Aires</p>
-                </div>
-                <span class="date">2016 - 2018</span>
-            </div>
-        </div>
-        
-        <div class="education-item">
-            <div class="education-header">
-                <div>
-                    <h3 class="degree">Licenciatura en Diseño Gráfico</h3>
-                    <p class="institution">Universidad Nacional de Córdoba</p>
-                </div>
-                <span class="date">2011 - 2015</span>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2 class="section-title">Contacto</h2>
-        <div class="contact-form">
-            <form>
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="subject">Asunto</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn">Enviar Mensaje</button>
-            </form>
-        </div>
-    </section>
-    
-    <footer>
-        <p>© 2023 María González. Todos los derechos reservados.</p>
     </footer>
-    
-    <script src="./js/script.js"></script>
 </body>
 </html>
